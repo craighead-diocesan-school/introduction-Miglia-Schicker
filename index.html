@@ -62,4 +62,37 @@
     color: white;
     background-color: rgb(79, 11, 79);
   }
+
+  @media screen and (max-width: 1000px;) {
+    body {
+      display: grid;
+      grid:
+        " h    h  " 30vh
+        " n    n  " 10vh
+        " m    m  " 40vh
+        " l    l  " 30vh
+        " f    f  " 20vh
+        / 2fr 2fr;
+    }
+
+    header {
+      grid-area: h;
+    }
+
+    nav {
+      grid-area: n;
+    }
+
+    main p {
+      grid-area: m;
+    }
+
+    ul {
+      grid-area: l;
+    }
+
+    footer {
+      grid-area: f;
+    }
+  }
 </style>
